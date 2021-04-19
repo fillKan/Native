@@ -9,9 +9,16 @@ namespace Native_CSharp
     {
         static void Main(string[] args)
         {
-            var sq = new Stack_Queue_03();
+            var sq = new Stack_Queue_01();
 
-            Console.WriteLine(sq.Solution(new int[6] { 1, 1, 9, 1, 1, 1 }, 0));
+            Console.WriteLine("Case 1:"); // 8
+            Console.WriteLine(sq.Solution(2, 10, new int[4] { 7, 4, 5, 6 }));
+
+            Console.WriteLine("Case 2:"); // 101
+            Console.WriteLine(sq.Solution(100, 100, new int[1] { 10 }));
+
+            Console.WriteLine("Case 3:"); // 110
+            Console.WriteLine(sq.Solution(100, 100, new int[10] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 }));
         }
     }
 }
